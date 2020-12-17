@@ -18,5 +18,11 @@
     <ClCompile Include="hello.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="hello1.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="issues.c">
+      <Filter>资源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
