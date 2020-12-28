@@ -56,6 +56,20 @@ test1()
 			;
 	}
 	*/
+	//1.9 Character Arrays
+	/* getline: read a line into s, return length */
+	/*int getline(char s[], int lim)
+	{
+		int c, i;
+		for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
+			s[i] = c;
+		if (c == '\n') {
+			s[i] = c;
+			++i;
+		}
+		s[i] = '\0';
+		return i;
+	}*/
 
 	//2.7 type conversion
 	/*printf("\n%d", -1L < 1U);
@@ -124,54 +138,6 @@ test1()
 	//	return n;
 	//}
 
-	//4.2
-	/*@function atof: convert string s to double */
-	//#include <ctype.h>
-	//double atof(char s[])
-	//{
-	//	double val, power;
-	//	int i, sign;
-	//	for (i = 0; isspace(s[i]); i++) /* skip white space */
-	//		;
-	//	sign = (s[i] == '-') ? -1 : 1;
-	//	if (s[i] == '+' || s[i] == '-')
-	//		i++;
-	//	for (val = 0.0; isdigit(s[i]); i++)
-	//		val = 10.0 * val + (s[i] - '0');
-	//	if (s[i] == '.')
-	//		i++;
-	//	for (power = 1.0; isdigit(s[i]); i++) {
-	//		val = 10.0 * val + (s[i] - '0');
-	//		power *= 10;
-	//	}
-	//	return sign * val / power;
-	//}
-
-
-	//5.2 Pointers and Function Arguments
-	//changex(&x);
-	//void changex(int* x) {
-	//	*x = 3;
-	//};
-
-	//exchange two out-of-order arguments with a function called swap
-	//swap(&a, &b);
-	//void swap(int* px, int* py) /* interchange *px and *py */
-	//{
-	//	int temp;
-	//	temp = *px;
-	//	*px = *py;
-	//	*py = temp;
-	//}
-
-	//5.3 Pointers and Arrays
-	//experiment of array a: a==&a[0],a[i]==*(a+i)
-	//int s[] = { 1,3,2 };
-	//printf("\n%d", s);
-	//printf("\n%d", &s[0]);
-	//printf("\n%d", *(s + 2));
-
-
-	//@¾­³£Õ³Ìù
+ 	//@often paste
 	//printf("\n%d", d1);
 }
